@@ -11,7 +11,7 @@ const handleOnChange = ()=> {
 function minus(){
     counter--;
     numberInput.value = counter;
-    if (counter<0)
+    if (counter < 0)
         numberInput.style.color = 'red';
     else
         numberInput.style.color = 'green';
