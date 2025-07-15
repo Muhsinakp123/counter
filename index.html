@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
 </head>
 <body>
 <div class="container">
@@ -13,15 +14,15 @@
         <h2>Counter</h2>
     </div>
     <div class="box">
-        <input type="text" value="0">
+        <input type="text" id="numbers" value="0" onchange="handleOnChange()">
     </div>
     <section id="btn">
-        <button id="minus">-</button>
-        <button id="refresh">↻</button>
-        <button id="plus">+</button>
+        <button onclick="minus()">-</button>
+        <button onclick="refresh()">↻</button>
+        <button onclick="plus()">+</button>
     </section>
 </main>
 </div>
-<script src="./index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
