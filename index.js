@@ -2,11 +2,11 @@ let counter = 0;
 
 const numberInput = document.getElementById('numbers')
 
-const handleOnChange = ()=> {
 
-    counter = numberInput.value
+numberInput.addEventListener('change',function(){
+       counter = numberInput.value
 
-}
+});
 
 function minus(){
     counter--;
