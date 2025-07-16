@@ -11,11 +11,12 @@ const handleOnChange = ()=> {
 function minus(){
     counter--;
     numberInput.value = counter;
-    if (counter < 0)
+    if (counter > 0)
+        numberInput.style.color = 'green';
+    else if(counter < 0)
         numberInput.style.color = 'red';
     else
-        numberInput.style.color = 'green';
-
+        numberInput.style.color = 'black';
     
 }
 function refresh(){
@@ -27,6 +28,10 @@ function refresh(){
 function plus(){
     counter++;
     numberInput.value = counter;
-    numberInput.style.color = 'green';
-    
+    if (counter > 0)
+        numberInput.style.color = 'green';
+    else if(counter < 0)
+        numberInput.style.color = 'red';
+    else
+        numberInput.style.color = 'black';
 }
